@@ -6,7 +6,7 @@
   <link href="https://ssuns3t.github.io/atom.xml" rel="self"/>
   
   <link href="https://ssuns3t.github.io/"/>
-  <updated>2025-08-08T01:59:44.985Z</updated>
+  <updated>2025-08-28T14:07:15.592Z</updated>
   <id>https://ssuns3t.github.io/</id>
   
   <author>
@@ -17,9 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Jadx-MCP</title>
+    <link href="https://ssuns3t.github.io/Jadx-MCP/"/>
+    <id>https://ssuns3t.github.io/Jadx-MCP/</id>
+    <published>2025-08-28T12:30:06.000Z</published>
+    <updated>2025-08-28T14:07:15.592Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Windows下-Jadx-MCP配置与使用"><a href="#Windows下-Jadx-MCP配置与使用" class="headerlink" title="Windows下 Jadx MCP配置与使用"></a>Windows下 Jadx MCP配置与使用</h1><p><a href="https://github.com/zinja-coder/jadx-mcp-server">参考jadx-mcp-server部署文章</a></p><h2 id="1-Jadx-插件与-Sever文件下载"><a href="#1-Jadx-插件与-Sever文件下载" class="headerlink" title="1.Jadx 插件与 Sever文件下载"></a>1.Jadx 插件与 Sever文件下载</h2><p><a href="https://github.com/zinja-coder/jadx-ai-mcp/releases">点击此处下载</a></p><h2 id="2-配置Jadx插件"><a href="#2-配置Jadx插件" class="headerlink" title="2.配置Jadx插件"></a>2.配置Jadx插件</h2><p>首先处理插件，打开Jadx，菜单栏中选择 插件-Mange Plugin<br> 进入安装插件，这里有2个办法<br> （1）直接安装jar包<br> （2）由于奇妙的问题导致选不到jar包，则在位置ID输入<br> <code>https://github.com/zinja-coder/jadx-ai-mcp/releases/download/v3.0.0/jadx-mcp-server-v3.0.0.zip</code></p><p>接着选中JADX-AI-MCP Plugin点击安装<br>按照好如图所示<br><img src="/images/cf12fab4e196708b42fb9ea23bab70ef.png" width="100%" height="100%"></p><h2 id="3-配置Sever文件"><a href="#3-配置Sever文件" class="headerlink" title="3.配置Sever文件"></a>3.配置Sever文件</h2><p>先进行解压<br>进入文件目录：<br><code>cd jadx-mcp-server</code><br>安装虚拟环境uv：<br><code>powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1 | iex&quot;</code><br>创建环境：<br><code>uv venv -p 3.11</code><br>激活虚拟环境<br><code>.venv\Scripts\activate</code><br>安装httpx fastmc<br><code>uv pip install httpx fastmcp</code></p><h2 id="4-在VScode上配置MCP"><a href="#4-在VScode上配置MCP" class="headerlink" title="4.在VScode上配置MCP"></a>4.在VScode上配置MCP</h2><p>按住<code>ctrl+shift + P</code>调出命令面板，选择增加MCP服务器<br><img src="/images/4d4529397c0c6e13a5c1225328c70e07.png" width="60%" height="20%"><br>选择命令stdio，输入：<br><code>C:\Users\[用户名]\.local\bin\uv.exe --directory &lt;解压后的路径&gt;jadx-mcp-server/ run jadx_mcp_server.py</code><br>其中uv环境需要根据自身计算机环境进行路径更改，解压后的路径指的是jadx-mcp-server位置<br>回车并队服务器进行命名，跳转到json，点击启动即可<br><img src="/images/7064bb1c8b611115ce31b6e995b7aba9.png" width="60%" height="20%"></p><h2 id="5-进行测试"><a href="#5-进行测试" class="headerlink" title="5.进行测试"></a>5.进行测试</h2><p>使用Jadx打开一个apk文件进行测试（可选：<a href="https://www.nssctf.cn/problem/4598">测试题下载</a>）</p><img src="/images/16e2a08ded860225c4726c1f8fa91476.png" width="60%" height="20%"><p>如图可在Jadx里面看到开启了MCP服务，然后到VScode中进行连接即可打开MCP.json（如果第三步没关那就无需操作，没关就是开了））</p><img src="/images/22a875cdd4d1237bac3fdeb7a84207cd.png" width="100%" height="100%"><p>这样就算连接成功，我这里直接用Copilot进行测试，记得切换到Agent模式，最后测试成功，美美一把梭拿到flag，如图所示：</p><img src="/images/57a60ec1f54ad4dcd6bbc83b1dc106a3.png" width="70%" height="70%">]]></content>
+    
+    
+    <summary type="html">test</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="https://ssuns3t.github.io/2025/08/07/hello-world/"/>
-    <id>https://ssuns3t.github.io/2025/08/07/hello-world/</id>
+    <link href="https://ssuns3t.github.io/hello-world/"/>
+    <id>https://ssuns3t.github.io/hello-world/</id>
     <published>2025-08-07T11:14:51.202Z</published>
     <updated>2025-08-08T01:59:44.985Z</updated>
     
